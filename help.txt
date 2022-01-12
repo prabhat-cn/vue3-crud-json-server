@@ -1,0 +1,1 @@
+https://jasonwatmore.com/post/2020/09/11/vuejs-display-a-list-of-items-with-v-for

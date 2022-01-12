@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && yarn build",
+    "gbuild": "concurrently \"yarn serve\" \"json-server --watch data/db.json --port 8085\" \"vue-cli-service build\"",
     "dev": "concurrently \"yarn serve\" \"json-server --watch data/db.json --port 8085\""
   },
   "dependencies": {
